@@ -1,62 +1,55 @@
-🛒 Flipkart Review Sentiment Analyzer
-A web application that scrapes product reviews from Flipkart and performs sentiment analysis using VADER to classify reviews as Positive, Negative, or Neutral, with results visualized in a pie chart.
----
+# Flipkart Review Sentiment Analyzer
 
-🚀 Features
-🔍 Review Scraping  
-Extracts user reviews from Flipkart product pages.
-💬 Sentiment Analysis  
-Uses VADER (Valence Aware Dictionary and sEntiment Reasoner) to classify reviews:
-Positive 😊
-Negative 😠
-Neutral 😐
-📊 Data Visualization  
-Displays sentiment distribution using a pie chart.
-🌐 Web Interface  
-Simple UI built with Flask for inputting product URLs and viewing results.
----
+A web app that scrapes Flipkart product reviews, analyzes sentiment with VADER, and visualizes results in a pie chart.
 
-🛠️ Tech Stack
-Backend: Python, Flask
-Web Scraping: BeautifulSoup, Requests
-NLP: NLTK (VADER Sentiment Analyzer)
-Visualization: Matplotlib / Chart.js
-Frontend: HTML, CSS, JavaScript
----
+## 🚀 Features
 
-⚙️ How It Works
-User inputs a Flipkart product URL
-Application scrapes reviews from the product page
-Each review is analyzed using VADER sentiment scoring
-Reviews are categorized into Positive, Negative, or Neutral
-Results are displayed as a pie chart
----
+- Review Scraping: Extracts user reviews from Flipkart product pages
+- Sentiment Analysis: Classifies reviews as Positive 😊, Negative 😠, or Neutral 😐 using VADER
+- Data Visualization: Shows sentiment distribution in a pie chart
+- Web Interface: Flask-based UI for entering product URLs and viewing results
 
----
-📂 Project Structure
-├── main.py              # Main Flask application  \
-├── templates/          # HTML templates  
-├── static/             # CSS, JS, charts  
+## 🛠️ Tech Stack
 
----
-⚠️ Limitations
-Flipkart may block scraping requests (use headers / rate limiting if needed)
-Works only for publicly accessible product pages
-Sentiment accuracy depends on VADER (rule-based model)
----
-📈 Future Enhancements
-📊 Bar charts and trend analysis
-🧠 Advanced NLP models (BERT / Transformers)
-🌍 Multi-language sentiment support
-📦 Export results (CSV / PDF)
-🔄 Real-time scraping with pagination support
----
+- Backend: Python, Flask
+- Web Scraping: BeautifulSoup, Requests
+- NLP: NLTK (VADER)
+- Visualization: Matplotlib / Chart.js
+- Frontend: HTML, CSS, JavaScript
 
-📜 Disclaimer
-This project is for educational purposes only. Web scraping should comply with Flipkart’s terms of service.
-The requirements.txt file is not added, will add in near future, So manually install dependencies
----
+## ⚙️ How It Works
 
-👨‍💻 Author
-Preet Bodar
-GitHub: https://github.com/PreetBodar
+1. User enters a Flipkart product URL
+2. App scrapes reviews from the page
+3. VADER analyzes each review's sentiment score
+4. Reviews categorize into Positive, Negative, or Neutral
+5. Results display as a pie chart
+
+## 📂 Project Structure
+├── main.py # Main Flask application
+├── templates/ # HTML templates
+└── static/ # CSS, JS, charts
+
+## ⚠️ Limitations
+
+- Flipkart may block scraping (add headers/rate limiting)
+- Only public product pages
+- VADER is rule-based; accuracy varies
+- No requirements.txt yet—install dependencies manually
+
+## 📈 Future Enhancements
+
+- Bar charts and trend analysis
+- Advanced NLP (BERT/Transformers)
+- Multi-language support
+- Export to CSV/PDF
+- Real-time scraping with pagination
+
+## 📜 Disclaimer
+
+For educational purposes only. Comply with Flipkart's terms of service for scraping.
+
+## 👨‍💻 Author
+
+**Preet Bodar**  
+GitHub: [PreetBodar](https://github.com/PreetBodar)
